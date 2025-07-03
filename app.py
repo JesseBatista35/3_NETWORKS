@@ -11,8 +11,10 @@ mysql = MySQL(app)
 
 app.config['MYSQL_HOST'] = 'host.docker.internal'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_PASSWORD'] = '1309'
 app.config['MYSQL_DB'] = 'flaskhost'
+
+mysql = MySQL(app)
 
 @app.route("/", methods=["GET"])
 def index():
